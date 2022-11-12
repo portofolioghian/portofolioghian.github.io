@@ -1,0 +1,21 @@
+.container{
+    max-width: 1200px;
+    margin: auto;
+    width: 90%;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[class^="col"]{
+    margin: 0 1.5%;
+}
+
+@for $i from 1 through 12{
+    .col#{$i}{
+        width: (100%/(12/i))-3%;
+    }
+    
+}
